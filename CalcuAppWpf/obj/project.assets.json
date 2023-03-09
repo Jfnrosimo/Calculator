@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jrosi.LAPTOP-BQH9SRCH\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jrosi.LAPTOP-BQH9SRCH\\source\\repos\\Calculator\\CalcuAppWpf\\CalcuAppWpf.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\CalcuAppWpf\\CalcuAppWpf\\CalcuAppWpf.csproj",
       "projectName": "CalcuAppWpf",
-      "projectPath": "C:\\Users\\jrosi.LAPTOP-BQH9SRCH\\source\\repos\\Calculator\\CalcuAppWpf\\CalcuAppWpf.csproj",
-      "packagesPath": "C:\\Users\\jrosi.LAPTOP-BQH9SRCH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jrosi.LAPTOP-BQH9SRCH\\source\\repos\\Calculator\\CalcuAppWpf\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\source\\repos\\CalcuAppWpf\\CalcuAppWpf\\CalcuAppWpf.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\source\\repos\\CalcuAppWpf\\CalcuAppWpf\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jrosi.LAPTOP-BQH9SRCH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

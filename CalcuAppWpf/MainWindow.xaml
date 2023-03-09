@@ -35,9 +35,10 @@
         <TextBlock
             x:Name="OutputTextBlock"
             Grid.ColumnSpan="4"
-            Padding="0,0,10,0"
+            Margin="0,0,10,0"
             VerticalAlignment="Center"
             FontSize="24"
+            FontWeight="Bold"
             Text="0"
             TextAlignment="Right" />
 
