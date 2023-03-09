@@ -20,6 +20,8 @@ namespace CalcuAppWpf
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        public string output = "";
         public MainWindow()
         {
             InitializeComponent();
@@ -28,8 +30,14 @@ namespace CalcuAppWpf
         private void NumBtn_Click(object sender, RoutedEventArgs e)
         {
             string name = ((Button)sender).Name;
-
-            MessageBox.Show(name);
+            
+            switch(name)
+            {
+                case "OneBtn":
+                    output += "1";
+                    OutputTextBlock.Text = output;
+                    break;
+            }
         }
     }
 }

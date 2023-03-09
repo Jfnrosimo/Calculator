@@ -25,10 +25,10 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="82.5" />
-            <ColumnDefinition Width="82.5" />
-            <ColumnDefinition Width="82.5" />
-            <ColumnDefinition Width="82.5" />
+            <ColumnDefinition Width="84.5" />
+            <ColumnDefinition Width="84.5" />
+            <ColumnDefinition Width="84.5" />
+            <ColumnDefinition Width="74.5" />
         </Grid.ColumnDefinitions>
 
         <!--  Display output  -->

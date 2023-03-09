@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Admin\source\repos\CalcuAppWpf\CalcuAppWpf\obj\Debug\net6.0-windows\
-CalcuAppWpf
+C:\Users\jrosi.LAPTOP-BQH9SRCH\source\repos\Calculator\CalcuAppWpf\obj\Debug\net6.0-windows\
+CalcuAppWpf_5qevpq1v_wpftmp
 none
 false
-TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\Admin\source\repos\CalcuAppWpf\CalcuAppWpf\App.xaml
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
+C:\Users\jrosi.LAPTOP-BQH9SRCH\source\repos\Calculator\CalcuAppWpf\App.xaml
 11407045341
 
-3-1233169557
-194101785492
+5582936504
+388203570984
 MainWindow.xaml;
 
 False
