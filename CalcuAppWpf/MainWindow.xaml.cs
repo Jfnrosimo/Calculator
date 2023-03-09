@@ -76,5 +76,10 @@ namespace CalcuAppWpf
                     break;
             }
         }
+
+        private void OperationBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

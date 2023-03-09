@@ -110,5 +110,47 @@
             Margin="5"
             Click="NumBtn_Click"
             Content="0" />
+
+        <!--  Operation button  -->
+        <Button
+            x:Name="DivideBtn"
+            Grid.Row="1"
+            Grid.Column="3"
+            Margin="5"
+            Click="OperationBtn_Click"
+            Content="÷"
+            FontSize="26" />
+        <Button
+            x:Name="MultiplyBtn"
+            Grid.Row="2"
+            Grid.Column="3"
+            Margin="5"
+            Click="OperationBtn_Click"
+            Content="×"
+            FontSize="26" />
+        <Button
+            x:Name="SubtractBtn"
+            Grid.Row="3"
+            Grid.Column="3"
+            Margin="5"
+            Click="OperationBtn_Click"
+            Content="-"
+            FontSize="26" />
+        <Button
+            x:Name="AddBtn"
+            Grid.Row="4"
+            Grid.Column="3"
+            Margin="5"
+            Click="OperationBtn_Click"
+            Content="+"
+            FontSize="26" />
+        <Button
+            x:Name="EqualBtn"
+            Grid.Row="4"
+            Grid.Column="2"
+            Margin="5"
+            Click="OperationBtn_Click"
+            Content="="
+            FontSize="26" />
     </Grid>
 </Window>
