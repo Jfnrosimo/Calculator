@@ -25,6 +25,7 @@ namespace CalcuAppWpf
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = this;
         }
 
         private void NumBtn_Click(object sender, RoutedEventArgs e)
