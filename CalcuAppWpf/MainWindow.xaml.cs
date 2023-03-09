@@ -24,5 +24,12 @@ namespace CalcuAppWpf
         {
             InitializeComponent();
         }
+
+        private void NumBtn_Click(object sender, RoutedEventArgs e)
+        {
+            string name = ((Button)sender).Name;
+
+            MessageBox.Show(name);
+        }
     }
 }

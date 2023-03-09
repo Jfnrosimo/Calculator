@@ -8,6 +8,7 @@
     Title="MainWindow"
     Width="350"
     Height="450"
+    FontSize="17"
     mc:Ignorable="d">
 
     <Grid Margin="10">
@@ -30,22 +31,73 @@
             <ColumnDefinition Width="82.5" />
         </Grid.ColumnDefinitions>
 
-        <Button x:Name="SevenBtn" Content="7" Grid.Row="1" Margin="5"/>
-        <Button x:Name="EightBtn" Content="8" Margin="5" 
-                Grid.Row="1" Grid.Column="1"/>
-        <Button x:Name="NineBtn" Content="9" Margin="5"
-                Grid.Row="1" Grid.Column="2"/>
-        <Button x:Name="FourBtn" Content="4" Margin="5" Grid.Row="2"/>
-        <Button x:Name="FiveBtn" Content="5" Margin="5"
-                Grid.Row="2" Grid.Column="1"/>
-        <Button x:Name="SixBtn" Content="6" Margin="5"
-                Grid.Row="2" Grid.Column="2"/>
-        <Button x:Name="OneBtn" Content="1" Margin="5" Grid.Row="3"/>
-        <Button x:Name="TwoBtn" Content="2" Margin="5"
-                Grid.Row="3" Grid.Column="1"/>
-        <Button x:Name="ThreeBtn" Content="3" Margin="5"
-                Grid.Row="3" Grid.Column="2"/>
-        <Button x:Name="ZeroBtn" Content="0" Margin="5"
-                Grid.Row="4" Grid.Column="1"/>
+        <!--  Number buttons  -->
+        <Button
+            x:Name="SevenBtn"
+            Grid.Row="1"
+            Margin="5"
+            Click="NumBtn_Click"
+            Content="7" />
+        <Button
+            x:Name="EightBtn"
+            Grid.Row="1"
+            Grid.Column="1"
+            Margin="5"
+            Click="NumBtn_Click"
+            Content="8" />
+        <Button
+            x:Name="NineBtn"
+            Grid.Row="1"
+            Grid.Column="2"
+            Margin="5"
+            Click="NumBtn_Click"
+            Content="9" />
+        <Button
+            x:Name="FourBtn"
+            Grid.Row="2"
+            Margin="5"
+            Click="NumBtn_Click"
+            Content="4" />
+        <Button
+            x:Name="FiveBtn"
+            Grid.Row="2"
+            Grid.Column="1"
+            Margin="5"
+            Click="NumBtn_Click"
+            Content="5" />
+        <Button
+            x:Name="SixBtn"
+            Grid.Row="2"
+            Grid.Column="2"
+            Margin="5"
+            Click="NumBtn_Click"
+            Content="6" />
+        <Button
+            x:Name="OneBtn"
+            Grid.Row="3"
+            Margin="5"
+            Click="NumBtn_Click"
+            Content="1" />
+        <Button
+            x:Name="TwoBtn"
+            Grid.Row="3"
+            Grid.Column="1"
+            Margin="5"
+            Click="NumBtn_Click"
+            Content="2" />
+        <Button
+            x:Name="ThreeBtn"
+            Grid.Row="3"
+            Grid.Column="2"
+            Margin="5"
+            Click="NumBtn_Click"
+            Content="3" />
+        <Button
+            x:Name="ZeroBtn"
+            Grid.Row="4"
+            Grid.Column="1"
+            Margin="5"
+            Click="NumBtn_Click"
+            Content="0" />
     </Grid>
 </Window>
