@@ -31,6 +31,16 @@
             <ColumnDefinition Width="82.5" />
         </Grid.ColumnDefinitions>
 
+        <!--  Display output  -->
+        <TextBlock
+            x:Name="OutputTextBlock"
+            Grid.ColumnSpan="4"
+            Padding="0,0,10,0"
+            VerticalAlignment="Center"
+            FontSize="24"
+            Text="0"
+            TextAlignment="Right" />
+
         <!--  Number buttons  -->
         <Button
             x:Name="SevenBtn"
