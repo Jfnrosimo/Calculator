@@ -20,6 +20,9 @@ namespace CalcuAppWpf
     /// </summary>
     public partial class MainWindow : Window
     {
+        double temp = 0;
+
+        string operation = "";
 
         public string output = "";
         public MainWindow()
@@ -77,9 +80,50 @@ namespace CalcuAppWpf
             }
         }
 
-        private void OperationBtn_Click(object sender, RoutedEventArgs e)
+        private void DivideBtn_Click(object sender, RoutedEventArgs e)
         {
+           
+        }
 
+        private void AddBtn_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
+        private void MultiplyBtn_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
+        private void SubtractBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if(output != "")
+            {
+                temp = double.Parse(output);
+                output = "";
+                operation = "Minus";
+            }
+        }
+    
+
+        private void EqualsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            switch(operation)
+            {
+                case "Minus":
+                    double tempOutput = temp - double.Parse(output);
+                    output = tempOutput.ToString();
+                    OutputTextBlock.Text = output;
+                    break;
+            }
+        }
+
+        private void ClearBtn_Click(object sender, RoutedEventArgs e)
+        {
+            temp = 0;
+            output = "";
+            operation = "";
+            OutputTextBlock.Text = "0";
         }
     }
 }

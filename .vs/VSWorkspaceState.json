@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CalcuAppWpf"
   ],
-  "SelectedNode": "\\CalcuAppWpf.sln",
+  "SelectedNode": "\\CalcuAppWpf\\MainWindow.xaml.cs",
   "PreviewInSolutionExplorer": false
 }
