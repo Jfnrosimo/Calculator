@@ -143,6 +143,14 @@ namespace CalcuAppWpf
                     output = tempOutput.ToString();
                     OutputTextBlock.Text = output;
                     break;
+                case "Divide":
+                    if(double.Parse(output) != 0)
+                    {
+                        tempOutput = temp / double.Parse(output);
+                        output = tempOutput.ToString();
+                        OutputTextBlock.Text = output;
+                    }
+                    break;
             }
         }
 
