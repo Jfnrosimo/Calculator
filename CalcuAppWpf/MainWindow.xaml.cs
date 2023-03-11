@@ -87,7 +87,12 @@ namespace CalcuAppWpf
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
-           
+           if(output != "")
+            {
+                temp = double.Parse(output);
+                output = "";
+                operation = "Add";
+            }
         }
 
         private void MultiplyBtn_Click(object sender, RoutedEventArgs e)
@@ -112,6 +117,11 @@ namespace CalcuAppWpf
             {
                 case "Minus":
                     double tempOutput = temp - double.Parse(output);
+                    output = tempOutput.ToString();
+                    OutputTextBlock.Text = output;
+                    break;
+                case "Add":
+                    tempOutput = temp + double.Parse(output);
                     output = tempOutput.ToString();
                     OutputTextBlock.Text = output;
                     break;
