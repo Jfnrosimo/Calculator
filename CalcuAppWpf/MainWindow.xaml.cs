@@ -25,6 +25,7 @@ namespace CalcuAppWpf
         string operation = "";
 
         public string output = "";
+
         public MainWindow()
         {
             InitializeComponent();
@@ -82,7 +83,12 @@ namespace CalcuAppWpf
 
         private void DivideBtn_Click(object sender, RoutedEventArgs e)
         {
-           
+            if (output != "")
+            {
+                temp = double.Parse(output);
+                output = "";
+                operation = "Divide";
+            }
         }
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)
@@ -97,7 +103,12 @@ namespace CalcuAppWpf
 
         private void MultiplyBtn_Click(object sender, RoutedEventArgs e)
         {
-           
+           if(output != "")
+            {
+                temp = double.Parse(output);
+                output = "";
+                operation = "Multiply";
+            }
         }
 
         private void SubtractBtn_Click(object sender, RoutedEventArgs e)
@@ -113,15 +124,22 @@ namespace CalcuAppWpf
 
         private void EqualsBtn_Click(object sender, RoutedEventArgs e)
         {
+            double tempOutput;
+
             switch(operation)
             {
                 case "Minus":
-                    double tempOutput = temp - double.Parse(output);
+                    tempOutput = temp - double.Parse(output);
                     output = tempOutput.ToString();
                     OutputTextBlock.Text = output;
                     break;
                 case "Add":
                     tempOutput = temp + double.Parse(output);
+                    output = tempOutput.ToString();
+                    OutputTextBlock.Text = output;
+                    break;
+                case "Multiply":
+                    tempOutput = temp * double.Parse(output);
                     output = tempOutput.ToString();
                     OutputTextBlock.Text = output;
                     break;
