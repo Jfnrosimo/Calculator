@@ -160,5 +160,16 @@
             Click="ClearBtn_Click"
             Content="C"
             FontSize="24" />
+        <Button
+            x:Name="SquareBtn"
+            Grid.Row="1"
+            Grid.Column="0"
+            Margin="5"
+            Click="SquareBtn_Click"
+            FontSize="24">
+            <TextBlock>
+                X<Run Typography.Variants="Superscript">2</Run>
+            </TextBlock>
+        </Button>
     </Grid>
 </Window>

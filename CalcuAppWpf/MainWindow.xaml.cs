@@ -120,6 +120,16 @@ namespace CalcuAppWpf
                 operation = "Minus";
             }
         }
+        
+        private void SquareBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if(output != "")
+            {
+                temp = double.Parse(output);
+                output = "";
+                operation = "Square";
+            }
+        }
     
 
         private void EqualsBtn_Click(object sender, RoutedEventArgs e)
@@ -150,6 +160,10 @@ namespace CalcuAppWpf
                         output = tempOutput.ToString();
                         OutputTextBlock.Text = output;
                     }
+                    break; 
+                case "Square":
+                    double square = temp * temp;
+                    OutputTextBlock.Text = square.ToString();
                     break;
             }
         }
