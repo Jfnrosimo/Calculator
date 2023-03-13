@@ -16,10 +16,10 @@
 
     <Window.Resources>
         <Style TargetType="Button">
-            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Margin" Value="2" />
             <Setter Property="Background" Value="#66b3ff" />
         </Style>
-        <Style x:Key="OperatorButton" TargetType="Button" >
+        <Style x:Key="OperatorButton" TargetType="Button">
             <Setter Property="Background" Value="#004080" />
             <Setter Property="Margin" Value="2" />
             <Setter Property="Foreground" Value="White" />
@@ -46,11 +46,11 @@
             <ColumnDefinition Width="0.75*" />
         </Grid.ColumnDefinitions>
 
-        <Border 
-            Grid.ColumnSpan="4" 
-            Background="#e6f2ff" 
-            BorderThickness="2" 
-            CornerRadius="5"/>
+        <Border
+            Grid.ColumnSpan="4"
+            Background="#e6f2ff"
+            BorderThickness="2"
+            CornerRadius="5" />
 
         <!--  Display output  -->
         <TextBlock
@@ -140,8 +140,8 @@
             Margin="5"
             Click="DivideBtn_Click"
             Content="÷"
-            FontSize="26" 
-            Style="{StaticResource OperatorButton}"/>
+            FontSize="26"
+            Style="{StaticResource OperatorButton}" />
         <Button
             x:Name="MultiplyBtn"
             Grid.Row="2"
@@ -149,8 +149,8 @@
             Margin="5"
             Click="MultiplyBtn_Click"
             Content="×"
-            FontSize="26" 
-            Style="{StaticResource OperatorButton}"/>
+            FontSize="26"
+            Style="{StaticResource OperatorButton}" />
         <Button
             x:Name="SubtractBtn"
             Grid.Row="3"
@@ -158,8 +158,8 @@
             Margin="5"
             Click="SubtractBtn_Click"
             Content="-"
-            FontSize="26" 
-            Style="{StaticResource OperatorButton}"/>
+            FontSize="26"
+            Style="{StaticResource OperatorButton}" />
         <Button
             x:Name="AddBtn"
             Grid.Row="4"
@@ -167,8 +167,8 @@
             Margin="5"
             Click="AddBtn_Click"
             Content="+"
-            FontSize="26" 
-            Style="{StaticResource OperatorButton}"/>
+            FontSize="26"
+            Style="{StaticResource OperatorButton}" />
         <Button
             x:Name="EqualsBtn"
             Grid.Row="5"
@@ -177,7 +177,7 @@
             Click="EqualsBtn_Click"
             Content="="
             FontSize="26"
-            Style="{StaticResource OperatorButton}"/>
+            Style="{StaticResource OperatorButton}" />
         <Button
             x:Name="ClearBtn"
             Grid.Row="1"
@@ -185,8 +185,8 @@
             Margin="5"
             Click="ClearBtn_Click"
             Content="C"
-            FontSize="24" 
-            Style="{StaticResource OperatorButton}"/>
+            FontSize="24"
+            Style="{StaticResource OperatorButton}" />
         <Button
             x:Name="SquareBtn"
             Grid.Row="1"
@@ -199,5 +199,14 @@
                 X<Run Typography.Variants="Superscript">2</Run>
             </TextBlock>
         </Button>
+        <Button
+            x:Name="SquareRootBtn"
+            Grid.Row="1"
+            Grid.Column="1"
+            Margin="5"
+            Click="SquareRootBtn_Click"
+            Content="√x"
+            FontSize="24"
+            Style="{StaticResource OperatorButton}" />
     </Grid>
 </Window>

@@ -130,6 +130,16 @@ namespace CalcuAppWpf
                 OutputTextBlock.Text = square.ToString();
             }
         }
+        
+        private void SquareRootBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if(output != "")
+            {
+                temp = double.Parse(output);
+                double squareRoot = Math.Sqrt(temp);
+                OutputTextBlock.Text = squareRoot.ToString();
+            }
+        }
     
 
         private void EqualsBtn_Click(object sender, RoutedEventArgs e)
