@@ -126,8 +126,8 @@ namespace CalcuAppWpf
             if(output != "")
             {
                 temp = double.Parse(output);
-                output = "";
-                operation = "Square";
+                double square = temp * temp;
+                OutputTextBlock.Text = square.ToString();
             }
         }
     
@@ -160,10 +160,6 @@ namespace CalcuAppWpf
                         output = tempOutput.ToString();
                         OutputTextBlock.Text = output;
                     }
-                    break; 
-                case "Square":
-                    double square = temp * temp;
-                    OutputTextBlock.Text = square.ToString();
                     break;
             }
         }
