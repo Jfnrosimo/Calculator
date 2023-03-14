@@ -78,6 +78,24 @@ namespace CalcuAppWpf
                     output += "9";
                     OutputTextBlock.Text = output;
                     break;
+                case "DecimalBtn":
+                    if (!output.Contains("."))
+                    {
+                        output += ".";
+                        OutputTextBlock.Text = output;
+                    }
+                    break;
+                case "PosNegBtn":
+                    if (!output.Contains("-")){
+                        
+                        OutputTextBlock.Text = output.Insert(0, "-"); ;
+                    }
+                    else
+                    {
+                        
+                        OutputTextBlock.Text = output.Replace("-", "");
+                    }
+                    break;
             }
         }
 
