@@ -86,15 +86,9 @@ namespace CalcuAppWpf
                     }
                     break;
                 case "PosNegBtn":
-                    if (!output.Contains("-")){
-                        
-                        OutputTextBlock.Text = output.Insert(0, "-"); ;
-                    }
-                    else
-                    {
-                        
-                        OutputTextBlock.Text = output.Replace("-", "");
-                    }
+                    double val = double.Parse(output);
+                    val = val * -1;
+                    OutputTextBlock.Text = val.ToString();
                     break;
             }
         }
@@ -105,6 +99,7 @@ namespace CalcuAppWpf
             {
                 temp = double.Parse(output);
                 output = "";
+                OutputTextBlock.Text = "÷";
                 operation = "Divide";
             }
         }
@@ -115,6 +110,7 @@ namespace CalcuAppWpf
             {
                 temp = double.Parse(output);
                 output = "";
+                OutputTextBlock.Text = "+";
                 operation = "Add";
             }
         }
@@ -125,6 +121,7 @@ namespace CalcuAppWpf
             {
                 temp = double.Parse(output);
                 output = "";
+                OutputTextBlock.Text = "×";
                 operation = "Multiply";
             }
         }
@@ -135,6 +132,7 @@ namespace CalcuAppWpf
             {
                 temp = double.Parse(output);
                 output = "";
+                OutputTextBlock.Text = "-";
                 operation = "Minus";
             }
         }
