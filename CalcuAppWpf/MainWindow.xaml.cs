@@ -88,7 +88,8 @@ namespace CalcuAppWpf
                 case "PosNegBtn":
                     double val = double.Parse(output);
                     val = val * -1;
-                    OutputTextBlock.Text = val.ToString();
+                    output = val.ToString();
+                    OutputTextBlock.Text = output;
                     break;
             }
         }
